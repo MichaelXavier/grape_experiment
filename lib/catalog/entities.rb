@@ -11,5 +11,11 @@ module Catalog
         receiver.extend(ClassMethods)
       end
     end
+
+    def self.dependency_list(*entities)
+      entities.flat_map {|entity|
+        [entity, *entity.dependent_entities]
+      }.uniq
+    end
   end
 end

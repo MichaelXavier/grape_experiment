@@ -1,5 +1,5 @@
 PATH
-  remote: ../mine/grape-swagger
+  remote: ../grape-swagger
   specs:
     grape-swagger (0.6.0)
       grape (>= 0.2.0)
