@@ -16,11 +16,8 @@ module Catalog
       params do
         requires :id, :type => Integer, :desc => "Product ID"
       end
-      route_param :id do
-        get do
-          puts Database.find(params[:id]).inspect
-          present Database.find(params[:id]), :with => Entities::Product
-        end
+      get ":id" do
+        present Database.find(params[:id]), :with => Entities::Product
       end
     end
   end
