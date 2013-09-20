@@ -1,1 +1,1 @@
-PROTIP: `rerun -d./lib/catalog,../mine/grape-swagger rackup`
+PROTIP: `rerun -d./lib/catalog,../grape-swagger rackup`
