@@ -20,3 +20,6 @@ require_relative 'catalog/entities/product'
 require_relative 'catalog/routes/products'
 require_relative 'catalog/market_price_client'
 require_relative 'catalog/api'
+
+module Catalog
+end
